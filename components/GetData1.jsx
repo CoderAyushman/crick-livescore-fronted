@@ -3,18 +3,18 @@ import React, { useEffect, useState } from 'react'
 import ScoreCard from './ScoreCard';
 
 const GetData = async () => {
-      const res=await fetch("http://localhost:5900/api/data",{
-          method:'GET',
-          headers:{
-              'Content-Type':'application/json',
-          }
-      });
-//   const res = await fetch("https://cricket-rose.vercel.app/api/data", {
-//     method: 'GET',
-//     headers: {
-//       'Content-Type': 'application/json',
-//     }
-//   });
+//       const res=await fetch("http://localhost:5900/api/data",{
+//           method:'GET',
+//           headers:{
+//               'Content-Type':'application/json',
+//           }
+//       });
+  const res = await fetch("https://cricket-live-score-ex-26.vercel.app/api/data", {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    }
+  });
   const post = await res.json();
   return post;
 }
