@@ -11,7 +11,7 @@ const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">LiveScore</Nav.Link>
-            <Nav.Link href="/crick-counter">ScoreCounter</Nav.Link>
+            <Nav.Link href="/upcoming-matches">UpcomingMatches</Nav.Link>
             
           </Nav>
         </Navbar.Collapse>
