@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react'
-import CardForUM from './CardForUT';
+import CardForPT from './CardForPT';
 const GetData = async () => {
   //     const res=await fetch("http://localhost:3000/api/data",{
   //         method:'GET',
@@ -8,7 +8,7 @@ const GetData = async () => {
   //             'Content-Type':'application/json',
   //         }
   //     });
-  const res = await fetch("https://cricket-tours-3.vercel.app/api/data", {
+  const res = await fetch("http://localhost:3200/api/data/past-series", {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -32,14 +32,14 @@ const GetData2 = () => {
   }, []);
   return (
     <div className=''>
-      <h1 className="text-4x1 font-extrabold text-gray-800">Upcoming Tours</h1>
+      <h1 className="text-4x1 font-extrabold text-gray-800">Past Tours</h1>
       <div className=" items-stretch card-container flex-wrap flex-col md:flex-row flex ">
         {
           allpost && (
             <>
               {allpost.map((series, index) => (
                 <div className=" p-2  md:w-[33%] w-full" key={index}>
-                  <CardForUM series={series} />
+                  <CardForPT series={series} />
                 </div>
               ))}
             </>
