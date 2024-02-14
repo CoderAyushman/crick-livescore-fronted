@@ -9,8 +9,8 @@ const upcomingMatches = () => {
   }, [])
   return (
     <>
-      <h1>Coming Soon...</h1>
-      {/* {isClient && <GetData3 />} */}
+      {/* <h1>Coming Soon...</h1> */}
+      {isClient && <GetData3 />}
     </>
   )
 }
