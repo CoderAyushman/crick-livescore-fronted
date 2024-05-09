@@ -28,16 +28,16 @@ const GetData1 = () => {
     fetchData();
   }, []);
   return (
-    <div className=''>
+    <div className="px-0 py-0">
 
-      <h1 className="text-4x1 font-extrabold text-gray-800">Live Matches Score</h1>
-      <div className=" items-stretch card-container flex-wrap flex-col md:flex-row flex ">
+      <h1 className="text-4x1 font-extrabold text-gray-800 min-w-[247px]">Live Matches Score</h1>
+      <div className=" items-stretch card-container  flex-wrap flex-row md:flex-row flex ">
         {
           allpost && (
             <>
               
                 {allpost.result.map((match, index) => (
-                  <div className=" p-2  md:w-[33%] w-full" key={index}>
+                  <div className=" p-2  md:w-[33%] w-full min-w-[247px] " key={index}>
                     <ScoreCard match={match} />
                   </div>
                 ))}
