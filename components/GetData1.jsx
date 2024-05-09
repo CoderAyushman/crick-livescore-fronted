@@ -31,7 +31,7 @@ const GetData1 = () => {
     <div className="px-0 py-0">
 
       <h1 className="text-4x1 font-extrabold text-gray-800 min-w-[247px]">Live Matches Score</h1>
-      <div className=" items-stretch card-container  flex-wrap flex-row md:flex-row flex ">
+      <div className=" items-stretch card-container  flex-wrap flex-col md:flex-row flex ">
         {
           allpost && (
             <>
