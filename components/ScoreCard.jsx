@@ -3,7 +3,7 @@
 const ScoreCard = ({match}) => {
     
   return (
-    <div className=" hover:bg-blue-400   rounded-xl border-b-orange-700 bordrer-b-8 card border p-4 bg white shadow-lg mt-2">
+    <div className=" hover:bg-blue-400 h-full  rounded-xl border-b-orange-700 bordrer-b-8 card border p-4 bg white shadow-lg mt-2">
     <div className="header pb-3 border-b-2  border-b-gray-200">
         <p className="font_bold ">{match.teamsHeading}</p>
         <p>{match.matchNumberVenue}</p>
