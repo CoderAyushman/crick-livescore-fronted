@@ -58,7 +58,7 @@ const GetData3 = () => {
     return () => { window.removeEventListener("scroll", handleInfiniteScroll) }
   }, [])
   return (
-    <div className=''>
+    <div className='pt-10'>
       <h1 className="text-4x1 font-extrabold text-gray-800">Past Tours</h1>
       <div className=" items-stretch card-container flex-wrap flex-col md:flex-row flex ">
 

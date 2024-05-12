@@ -4,8 +4,9 @@ import { Navbar,Container,Nav} from 'react-bootstrap';
 const NavBar = () => {
   return (
     <>
+    <div className="fixed w-full  overflow-hidden z-10 block">
     <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
+      <Container >
         <Navbar.Brand >🏏Info</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -18,6 +19,7 @@ const NavBar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </div>
 
     </>
   )

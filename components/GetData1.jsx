@@ -28,7 +28,7 @@ const GetData1 = () => {
     fetchData();
   }, []);
   return (
-    <div className="px-0 py-0">
+    <div className="pt-10">
 
       <h1 className="text-4x1 font-extrabold text-gray-800 min-w-[247px]">Live Matches Score</h1>
       <div className=" items-stretch card-container  flex-wrap flex-col md:flex-row flex ">
